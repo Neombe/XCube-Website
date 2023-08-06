@@ -1,0 +1,155 @@
+@font-face {
+    font-family: ubuntubold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/Ubuntu-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: ubuntuitalicb;
+    src: url(fonts/Ubuntu-BoldItalic.ttf);
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-image: url('images/img.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar img {
+    width: 4em; 
+    height: auto; 
+    padding: 1em; 
+    transform: translateX(45em);
+}
+  
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex: 1; 
+}
+
+.navbar li {
+    margin: 0 5em; 
+    transform: translateX(3em);
+}
+  
+.navbar li a {
+    display: inline-block;
+    color: rgb(183, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: ubuntubold;
+    font-size: 2em;
+    animation: fadeInAnimation 0.5s ease-in-out;
+}
+  
+.navbar li a:hover {
+    background-color: #565656c8;
+}
+
+#home::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/home.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+  }
+
+#store::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/store.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+}
+
+#login::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/login.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+}
+
+#about::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.96em; 
+    background-image: url('images/info.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+    transform: translateY(13%);
+}
+
+#page{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    background-image: url("images/joinbackgound.png");
+    background-size: cover;
+    transform: translateY(3em);
+}
+
+#howjoinhead{
+    font-size: 10em;
+    font-family: ubuntubold;
+    color: rgb(255, 187, 0);
+    text-shadow: 0.07em 0.07em 0.3em;
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+#howtolist{
+    font-size: 7em;
+    text-align: center;
+    list-style: none;
+    font-family: ubuntuitalicb;
+    transform: translateY(-0.5em);
+    background-image: linear-gradient(to right, #ff0000, #a600ff, #00c8ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fadeInAnimation 2s ease-in-out;
+}
+
+.br{
+    margin-bottom: 1em;
+}

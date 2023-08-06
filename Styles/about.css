@@ -1,0 +1,133 @@
+@font-face {
+    font-family: ubuntubold;
+    src: url(fonts/Ubuntu-Bold.ttf);
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(fonts/Ubuntu-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: ubuntuitalicb;
+    src: url(fonts/Ubuntu-BoldItalic.ttf);
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-image: url('images/img.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    display: flex; 
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar img {
+    width: 4em; 
+    height: auto; 
+    padding: 1em; 
+    transform: translateX(45em);
+}
+  
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex: 1; 
+}
+
+.navbar li {
+    margin: 0 5em; 
+    transform: translateX(3em);
+}
+  
+.navbar li a {
+    display: inline-block;
+    color: rgb(183, 255, 0);
+    text-align: center;
+    text-decoration: none;
+    font-family: ubuntubold;
+    font-size: 2em;
+    animation: fadeInAnimation 0.5s ease-in-out;
+}
+  
+.navbar li a:hover {
+    background-color: #565656c8;
+}
+
+#home::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/home.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+  }
+
+#store::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/store.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+}
+
+#login::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.87em; 
+    background-image: url('images/login.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+}
+
+#about::before {
+    content: ""; 
+    display: inline-block; 
+    width: 1em; 
+    height: 0.96em; 
+    background-image: url('images/info.png'); 
+    background-size: cover; 
+    margin-right: 0.1em; 
+    transform: translateY(13%);
+}
+
+#page{
+    background-color: rgb(255, 246, 228);
+    height: 100vh;
+}
+
+#xcube{
+   font-family: ubuntubold;
+   font-size: 8em;
+   padding-top: 0.3em;
+   border: 0.1em solid rgb(29, 29, 29);
+   display: inline-block;
+   transform: translateY(5em);
+   padding: 0px;
+}
