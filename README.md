@@ -1,9 +1,7 @@
-Info:
-XCubemc.net is the official website for the XCubemc Minecraft server. 
-This website provides valuable information about the server, including server status, rules, guides, and community interactions. 
-The website aims to enhance the player experience, facilitate community engagement, and offer a seamless platform for new and existing players to connect.
+# XCubemc.net - Minecraft Server Website
 
-Goals:
--Create an account system using mongodb and php.
--Create a forum space.
+## Goals:
+-Finish all pages and their respective layouts.
+-Add login systen using mongodb and php.
 -Link external store.
+-Make a forun space.
